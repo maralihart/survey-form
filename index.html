@@ -9,18 +9,18 @@
     </head>
     <body>
         <header>
-            <h1 id="title">Random Subway Generator</h1>
-            <p id="description">Take this form to determine where to go on the subway</p>
+            <h1 id="title" class="text-center">Random Subway Generator</h1>
+            <p id="description" class="text-center">Take this form to determine where to go on the subway</p>
         </header>
         <form id="survey-form">
 
             <div class="form-group">
-                <label id="name-label" for="name">Name:</label>
+                <label id="name-label" for="name">Name*</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name" required />
             </div>
 
             <div class="form-group">
-                <label id="email-label" for="email">Email:</label>
+                <label id="email-label" for="email">Email*</label>
                 <input type="email" name="email" id="email" placeholder="Enter your email" required />
             </div>      
             
@@ -29,7 +29,7 @@
                 <input type="number" name="number" id="number" placeholder="Enter your number" min="0" max="15" />
             </div>
 
-            <div class="form-group">
+            <div class="form-group custom-select">
                 <label id="dropdown-label" for="dropdown">What kind of stop are you at?</label>
                 <select id="dropdown">
                     <option value="transfer">Transfer</option>
@@ -43,14 +43,17 @@
                 <input type="textarea" name="textarea" id="textarea" placeholder="Any useless information you want to input here?" />
             </div>
 
-            <button id="submit">Generate Action</button>
+            <section id="button">
+                <button id="submit">Generate Action</button>
+            </section>
+            
 
         </form>
 
         <footer>
-            This website was made as a challenge for freecodecamp.org's Responsive Web Design curriculum.
-            <br>
-            Made by Mara Hart | mara@virginia.edu | <a href="https://github.com/maralihart" target="blank">GitHub</a>
+            <p>This website was made as a challenge for freecodecamp.org's Responsive Web Design curriculum. This is a building block for a future repository that allows the user to input information of their local subway line and generate a random action to create a game of exploring the location they are in.</p>
+            
+            <p>Made by Mara Hart | mara@virginia.edu | <a href="https://github.com/maralihart" target="blank">GitHub</a></p>
         </footer>
         
         <script src="./index.js" async defer></script>

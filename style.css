@@ -1,10 +1,13 @@
 :root {
-    --primary: green;
-    --secondary: blue;
+    --primary: white;
+    --secondary: rgb(233, 168, 72);
     --tertiary: yellow;
 
-    --background: pink;
-    --hidden: rgb(151, 151, 151);
+    --background: rgb(5, 144, 236);
+    --hidden: rgba(201, 201, 201, 0.726);
+    --shadow: rgba(129, 213, 252, 0.623);
+    --light: white;
+    --dark: black;
 
     --primary-text: monospace;
     --secondary-text: sans-serif;
@@ -21,8 +24,7 @@ body {
 header {
     color: var(--primary);
     background: var(--background);
-    text-align: center;
-    padding: 5% 10%;
+    padding: 30px 10%;
     line-height: 30px;
 }
 
@@ -30,8 +32,12 @@ footer {
     color: var(--hidden);
     background: var(--background);
     text-align: center;
-    padding: 5% 10%;
+    padding: 20px 10%;
     font-size: .5rem;
+}
+
+footer p {
+    margin: 10px 0px;
 }
 
 a {
@@ -39,25 +45,63 @@ a {
     color: var(--secondary);
 }
 
+.text-center {
+    text-align: center;
+}
+
 #title {
     font-family: var(--primary-text);
 }
 
+#description {
+    font-family: var(--secondary-text);
+    font-style: italic;
+}
+
 form {
     margin: 10px 10%;
-    padding: 7% 10%;
+    padding: 20px 10%;
     /* background: var(--background); */
     border-radius: 30px;
     border: none;
 }
 
 .form-group {
-    padding: 8px 0px;
-    
+    padding: 10px 0px;
+
+}
+
+label {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: var(--dark);
+}
+
+input, select {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background: var(--background);
+    box-shadow: 2px 2px var(--shadow);
+}
+
+input, .actual-edit-overlay, select{
+    -webkit-text-fill-color: var(--light);
+    color: var(--light);
 }
 
 button {
     border: none;
     background: var(--secondary);
-    color: white;
+    color: var(--light);
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 80%;
+    padding: 15px 8px;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
 }
