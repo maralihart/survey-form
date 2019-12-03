@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Random Subway Generator</h1>
+            <p id="description">Take this form to determine where to go on the subway</p>
+        </header>
+        <form id="survey-form">
+
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required />
+            </div>      
+            
+            <div class="form-group">
+                <label id="number-label" for="number">What's your max number of stops to take?</label>
+                <input type="number" name="number" id="number" placeholder="Enter your number" min="0" max="15" />
+            </div>
+
+            <div class="form-group">
+                <label id="dropdown-label" for="dropdown">What kind of stop are you at?</label>
+                <select id="dropdown">
+                    <option value="transfer">Transfer</option>
+                    <option value="no-transfer">No Transfer</option>
+                    <option value="no-stop">Can't Get Off</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label id="textarea-label" for="textarea">Comments</label>
+                <input type="textarea" name="textarea" id="textarea" placeholder="Any useless information you want to input here?" />
+            </div>
+
+            <button id="submit">Generate Action</button>
+
+        </form>
+
+        <footer>
+            This website was made as a challenge for freecodecamp.org's Responsive Web Design curriculum.
+            <br>
+            Made by Mara Hart | mara@virginia.edu | <a href="https://github.com/maralihart" target="blank">GitHub</a>
+        </footer>
+        
+        <script src="./index.js" async defer></script>
+    </body>
+</html>

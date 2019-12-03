@@ -1,0 +1,63 @@
+:root {
+    --primary: green;
+    --secondary: blue;
+    --tertiary: yellow;
+
+    --background: pink;
+    --hidden: rgb(151, 151, 151);
+
+    --primary-text: monospace;
+    --secondary-text: sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: var(--secondary-text);
+}
+
+header {
+    color: var(--primary);
+    background: var(--background);
+    text-align: center;
+    padding: 5% 10%;
+    line-height: 30px;
+}
+
+footer {
+    color: var(--hidden);
+    background: var(--background);
+    text-align: center;
+    padding: 5% 10%;
+    font-size: .5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+#title {
+    font-family: var(--primary-text);
+}
+
+form {
+    margin: 10px 10%;
+    padding: 7% 10%;
+    /* background: var(--background); */
+    border-radius: 30px;
+    border: none;
+}
+
+.form-group {
+    padding: 8px 0px;
+    
+}
+
+button {
+    border: none;
+    background: var(--secondary);
+    color: white;
+}
